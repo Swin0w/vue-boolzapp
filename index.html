@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
     <title>Vue Boolzapp</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
@@ -32,7 +34,11 @@
             <input type="search" name="" placeholder="Ricerca il tuo contatto...">
           </div>
           <ul id="navContacts-ul">
-            <li v-for="elem in contacts">{{elem.name}}</li>
+            <li v-for="elem in contacts">
+              <div id="contact">
+                <span>{{elem.name}}</span>
+              </div>
+            </li>
           </ul>
         </div>
       </nav>
