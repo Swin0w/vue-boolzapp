@@ -31,10 +31,9 @@
           <div id="navContacts-header">
             <img src="img/boolzapp.png" alt="BoolZapp">
             <input type="search" name="" placeholder="Ricerca il tuo contatto...">
-            <input type="button" name="" value="+">
           </div>
           <ul id="navContacts-ul">
-            <li></li>
+            <li v-for="elem in contacts">{{elem}}</li>
           </ul>
         </div>
       </nav>

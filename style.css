@@ -8,6 +8,7 @@ li {
 }
 /* BOOLZAPP */
 #navContacts {
+  background-color: #e8e8e8;
   width: 300px;
   padding: 30px 30px;
   display: flex;
