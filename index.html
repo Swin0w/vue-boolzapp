@@ -9,7 +9,6 @@
     crossorigin="anonymous" />
     <title>Vue Boolzapp</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <!-- Milestone 1 -> !Replica della grafica:
@@ -33,10 +32,11 @@
             <input type="search" name="" placeholder="Ricerca il tuo contatto...">
           </div>
           <ul id="navContacts-ul">
-            <li v-for="elem in contacts">{{elem}}</li>
+            <li v-for="elem in contacts">{{elem.name}}</li>
           </ul>
         </div>
       </nav>
     </main>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
