@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+    <title>Vue Boolzapp</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <!-- Milestone 1 -> !Replica della grafica:
+    Con la possibilità di avere dei messaggi inviati verdi e ricevuti bianchi
+
+                        !Visualizzazione dinamica della lista contatti:
+    Tramite la direttiva v-for, visualizzare nome e immagine di ogni contatto-->
+
+
+    <!-- Milestone 2 -> !Visualizzazione dinamica dei messaggi:
+    Tramite la direttiva v-for, visualizzare tutti i messaggi relativi al contatto attivo
+    all'interno del pannello della conversazione
+
+                        !Click sul contatto:
+    Mostra la conversazione del contatto cliccato-->
+    <main>
+      <nav>
+        <div id="navContacts">
+          <div id="navContacts-header">
+            <img src="img/boolzapp.png" alt="BoolZapp">
+            <input type="search" name="" placeholder="Ricerca il tuo contatto...">
+            <input type="button" name="" value="+">
+          </div>
+          <ul id="navContacts-ul">
+            <li></li>
+          </ul>
+        </div>
+      </nav>
+    </main>
+  </body>
+</html>

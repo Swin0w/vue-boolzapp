@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+/* BOOLZAPP */
+#navContacts {
+  width: 300px;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+}
+#navContacts-header {
+  margin-bottom:40px;
+}
+#navContacts-header input {
+  margin-top: 10px;
+}
