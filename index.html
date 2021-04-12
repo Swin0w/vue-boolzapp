@@ -29,17 +29,25 @@
     <main>
       <nav>
         <div id="navContacts">
-          <div id="navContacts-header">
-            <img src="img/boolzapp.png" alt="BoolZapp">
-            <input type="search" name="" placeholder="Ricerca il tuo contatto...">
+          <div class="container">
+            <div id="navContacts-header">
+              <img src="img/boolzapp.png" alt="">
+              <input type="search" name="" placeholder="Trova il contatto...">
+            </div>
           </div>
-          <ul id="navContacts-ul">
-            <li v-for="elem in contacts">
-              <div id="contact">
+          <ul>
+            <li v-for="elem in contacts" id="contact">
+              <div class="container">
                 <span>{{elem.name}}</span>
               </div>
             </li>
           </ul>
+          <div id="navFooter">
+            <div class="container">
+              <p>Creazione di Simone Marzolla<br>
+                Anno: 2021</p>
+            </div>
+          </div>
         </div>
       </nav>
     </main>
