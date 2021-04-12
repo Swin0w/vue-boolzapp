@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
     <title>Vue Boolzapp</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- Milestone 1 -> !Replica della grafica:
@@ -26,6 +29,17 @@
 
                         !Click sul contatto:
     Mostra la conversazione del contatto cliccato-->
+    <!-- Milestone 3 -> !Aggiunta di un messaggio
+    L'untente scire un testo nella parte bassa e digitando "enter" il tasto viene
+    aggiunto al thread sopra, come messaggio verde
+
+                        !Risposta dell'interlocoture
+    ad ogni inserimento di un messaggiom l'utente riceverà un "ok" come risposta,
+    che apparirà daopo un secondo-->
+
+    <!-- Milestone 4 -> !Ricerca utenti
+    scrivendo qualcosa nell'input a sinistra, vengono visualizzati solo i contatti
+    il cui nome contiene le lettere inserite-->
     <main>
       <nav id="navContacts">
         <div class="container">
@@ -54,6 +68,11 @@
           <img src="img/boolzapp.png" alt="">
         </div>
         <span>World instant messages.</span>
+      </section>
+      <section id="chat">
+        <div id="chat-header">
+
+        </div>
       </section>
     </main>
     <script type="text/javascript" src="script.js"></script>

@@ -70,9 +70,16 @@ function init(){
       ]
     },
     methods: {
+      // search: function() {
+      //
+      // },
       openChat: function() {
-
-      }
+        $(".contact").click(function() {
+          $(".contact").setAttribute("cursor", "pointer");
+          console.log("ciao");
+          $("#default").setAttribute("display", "none");
+        })
+      },
     }
   });
 }

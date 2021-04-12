@@ -82,3 +82,7 @@ main {
 }
 /* SEZIONE DI VISUALIZZAZIONE MESSAGGI AL CLICK DELLA CONVERSAZIONE */
 /* VALORE DEFAULT - > display:none */
+#chat {
+  display: none;
+  background-color: #a6a6a6;
+}
