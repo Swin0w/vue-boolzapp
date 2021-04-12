@@ -5,7 +5,7 @@ function init(){
       contacts: [
         {
           name: "Mamma",
-          avatar: "_1",
+          avatar: "",
           messages: [
             {
               date: "05/04/2021",
@@ -27,7 +27,7 @@ function init(){
         },
         {
           name: "Gabriele",
-          avatar: "_2",
+          avatar: "",
           messages: [
             {
               date: "07/04/2021",
@@ -42,6 +42,11 @@ function init(){
           ]
         }
       ]
+    },
+    methods: {
+      openChat: function() {
+
+      }
     }
   });
 }

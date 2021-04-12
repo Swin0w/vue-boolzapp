@@ -36,7 +36,7 @@
             </div>
           </div>
           <ul>
-            <li v-for="elem in contacts" id="contact">
+            <li v-for="elem in contacts" id="contact" @click="openChat">
               <div class="container">
                 <span>{{elem.name}}</span>
               </div>
@@ -50,6 +50,11 @@
           </div>
         </div>
       </nav>
+      <section>
+        <div id="defaultSectionHeader">
+          aaaaaaaaaa
+        </div>
+      </section>
     </main>
     <script type="text/javascript" src="script.js"></script>
   </body>
