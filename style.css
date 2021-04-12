@@ -65,6 +65,20 @@ main {
   color: white;
 }
 /* SEZIONE DI VISUALIZZAZIONE MESSAGGI */
-#def{
-  background-color: #001;
+#default{
+  background-color: #bdcfff;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
 }
+#orizontalAlignMiddle {
+    margin: 0 auto;
+}
+#default span {
+  text-align: center;
+  margin-top: -10px;
+  margin-left: 190px;
+}
+/* SEZIONE DI VISUALIZZAZIONE MESSAGGI AL CLICK DELLA CONVERSAZIONE */
+/* VALORE DEFAULT - > display:none */

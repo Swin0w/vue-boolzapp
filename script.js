@@ -40,7 +40,33 @@ function init(){
               status: "sent"
             }
           ]
-        }
+        },
+        {
+          name: "Shöjo",
+          avatar: "img/user.svg",
+          messages: [
+            {
+              date: "12/07/2021",
+              text: "Ciao cara, tutto bene? Ti ho rinominata Shöjo",
+              status: "sent"
+            },
+            {
+              date: "12/07/2021",
+              text: "Ei ciao, tutto bene grazie tu? Cosa vuol dire?",
+              status: "received"
+            },
+            {
+              date: "12/07/2021",
+              text: "Tutto bene grazie. Shöjo è una parola giapponese che significa appunto cara o roba simile",
+              status: "sent"
+            },
+            {
+              date: "12/07/2021",
+              text: "Uh grazie, che carino",
+              status: "received"
+            },
+          ]
+        },
       ]
     },
     methods: {
