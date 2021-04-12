@@ -27,33 +27,29 @@
                         !Click sul contatto:
     Mostra la conversazione del contatto cliccato-->
     <main>
-      <nav>
-        <div id="navContacts">
-          <div class="container">
-            <div id="navContacts-header">
-              <img src="img/boolzapp.png" alt="">
-              <input type="search" name="" placeholder="Trova il contatto...">
-            </div>
+      <nav id="navContacts">
+        <div class="container">
+          <div id="navContacts-header">
+            <img src="img/boolzapp.png" alt="">
+            <input type="search" name="" placeholder="Trova il contatto...">
           </div>
-          <ul>
-            <li v-for="elem in contacts" id="contact" @click="openChat">
-              <div class="container">
-                <span>{{elem.name}}</span>
-              </div>
-            </li>
-          </ul>
-          <div id="navFooter">
+        </div>
+        <ul>
+          <li v-for="elem in contacts" class="contact" @click="openChat">
+            <img :src="elem.avatar" alt="">
             <div class="container">
-              <p>Creazione di Simone Marzolla<br>
-                Anno: 2021</p>
+              <span>{{elem.name}}</span>
             </div>
+          </li>
+        </ul>
+        <div id="navFooter">
+          <div class="container">
+            <p>Creazione di Simone Marzolla<br>
+              Anno: 2021</p>
           </div>
         </div>
       </nav>
-      <section>
-        <div id="defaultSectionHeader">
-          aaaaaaaaaa
-        </div>
+      <section id="def">
       </section>
     </main>
     <script type="text/javascript" src="script.js"></script>

@@ -14,15 +14,10 @@ li {
   margin: 0 auto;
   display: flex;
 }
-nav, section {
-  display: inline-block;
-}
-section {
-  display: flex;
-  flex-grow: 1;
-}
 /* BOOLZAPP */
 main {
+  display: flex;
+  align-items: stretch;
   height: 100vh;
 }
 #navContacts {
@@ -43,17 +38,24 @@ main {
 #navContacts ul {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
-#contact {
+.contact {
   background-color: white;
   height: 50px;
+  display: flex;
 }
-#contact span {
+.contact img {
+  width: 28px;
+  height: 28px;
+  margin-left: 30px;
+}
+.contact span {
   font-weight: bold;
   font-size: 14pt;
+  padding-left: 5px;
   vertical-align: middle;
   line-height: 50px;
-  padding-left: 30px;
 }
 #navFooter {
   background-color: #000;
@@ -63,9 +65,6 @@ main {
   color: white;
 }
 /* SEZIONE DI VISUALIZZAZIONE MESSAGGI */
-#defaultSectionHeader {
-  background-image: url(img/bool.png) repeat;
-  background-size: 100%;
-
-
+#def{
+  background-color: #001;
 }

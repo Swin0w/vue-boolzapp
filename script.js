@@ -5,7 +5,7 @@ function init(){
       contacts: [
         {
           name: "Mamma",
-          avatar: "",
+          avatar: "img/user.svg",
           messages: [
             {
               date: "05/04/2021",
@@ -27,7 +27,7 @@ function init(){
         },
         {
           name: "Gabriele",
-          avatar: "",
+          avatar: "img/user.svg",
           messages: [
             {
               date: "07/04/2021",
