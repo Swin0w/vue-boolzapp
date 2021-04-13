@@ -40,7 +40,7 @@
     <!-- Milestone 4 -> !Ricerca utenti
     scrivendo qualcosa nell'input a sinistra, vengono visualizzati solo i contatti
     il cui nome contiene le lettere inserite-->
-    <main>
+    <main id="app">
       <nav id="navContacts">
         <div class="container">
           <div id="navContacts-header">
@@ -49,7 +49,7 @@
           </div>
         </div>
         <ul>
-          <li v-for="elem in contacts" class="contact" @click="openChat">
+          <li v-for="(elem, index) in contacts" class="contact" @click="openChat(index)">
             <img :src="elem.avatar" alt="">
             <div class="container">
               <span>{{elem.name}}</span>
@@ -63,15 +63,23 @@
           </div>
         </div>
       </nav>
-      <section id="default">
+      <section id="default" v-if="!showChat">
         <div id="orizontalAlignMiddle">
           <img src="img/boolzapp.png" alt="">
         </div>
         <span>World instant messages.</span>
       </section>
-      <section id="chat">
-        <div id="chat-header">
+      <section id="chat" v-else>
+        <div id="chatHeader">
+          <img :src="contacts[contactClick].avatar" alt="Nome del contatto">
+          <span>{{contacts[contactClick].name}}</span>
+        </div>
+        <div id="justChatting">
 
+        </div>
+        <div id="sendMessage">
+          <input type="text" name="" placeholder="Scrivi un messaggio...">
+          <input type="button" name="" value=">">
         </div>
       </section>
     </main>

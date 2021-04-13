@@ -1,7 +1,9 @@
 function init(){
   new Vue({
-    el: "#navContacts",
+    el: "#app",
     data: {
+      contactClick: 0,
+      showChat: false,
       contacts: [
         {
           name: "Mamma",
@@ -73,13 +75,11 @@ function init(){
       // search: function() {
       //
       // },
-      openChat: function() {
-        $(".contact").click(function() {
-          $(".contact").setAttribute("cursor", "pointer");
-          console.log("ciao");
-          $("#default").setAttribute("display", "none");
-        })
-      },
+      openChat: function(index) {
+        console.log("ciao");
+        this.showChat = true;
+        this.contactClick = index;
+      }
     }
   });
 }
