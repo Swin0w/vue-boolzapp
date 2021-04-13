@@ -74,11 +74,18 @@
           <img :src="contacts[contactClick].avatar" alt="Nome del contatto">
           <span>{{contacts[contactClick].name}}</span>
         </div>
-        <div id="justChatting" v-if="showConv">
-
+        <div id="justChatting">
+          <div id="message"v-for="elem in contacts[contactClick].messages"
+          v-if="contacts.messages == sent" class="rightMsg">
+            <p>{{elem.text}}</p>
+          </div>
+          <div v-else class="leftMsg">
+            <p>{{elem.text}}</p>
+          </div>
         </div>
         <div id="sendMessage">
-          <input type="text" name="" placeholder="Scrivi un messaggio..." v-keyOn.enter="addMessage">
+          <input type="text" name="" placeholder="Scrivi un messaggio..." v-model="writeMessage"
+          v-on:keyUp.enter="addMessage">
           <input type="button" name="" value=">">
         </div>
       </section>

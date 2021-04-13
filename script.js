@@ -2,10 +2,9 @@ function init(){
   new Vue({
     el: "#app",
     data: {
-      addMessage: "",
+      writeMessage: "",
       contactClick: 0,
       showChat: false,
-      showConv: true,
       contacts: [
         {
           name: "Mamma",
@@ -13,7 +12,7 @@ function init(){
           messages: [
             {
               date: "05/04/2021",
-              text: "Oi ma, mi vai a comprare degli Estathè?",
+              text: "Ciao mamma, mi andresti a comprare degli Estathè perfavore?",
               status: "sent"
 
             },
@@ -46,29 +45,24 @@ function init(){
           ]
         },
         {
-          name: "Shöjo",
+          name: "Alessia",
           avatar: "img/user.svg",
           messages: [
             {
               date: "12/07/2021",
-              text: "Ciao cara, tutto bene? Ti ho rinominata Shöjo",
+              text: "Ciao cara, tutto bene?",
               status: "sent"
             },
             {
               date: "12/07/2021",
-              text: "Ei ciao, tutto bene grazie tu? Cosa vuol dire?",
+              text: "Ei ciao, tutto bene grazie tu?",
               status: "received"
             },
             {
               date: "12/07/2021",
-              text: "Tutto bene grazie. Shöjo è una parola giapponese che significa appunto cara o roba simile",
+              text: "Tutto bene grazie.",
               status: "sent"
-            },
-            {
-              date: "12/07/2021",
-              text: "Uh grazie, che carino",
-              status: "received"
-            },
+            }
           ]
         },
       ]
@@ -82,9 +76,14 @@ function init(){
         this.showChat = true;
         this.contactClick = index;
       },
-      showConv: function(index){
-
-
+      addMessage: function(index) {
+        console.log("Invio");
+        const newMessage = {
+          date: "12/07/2021",
+          text: this.writeMessage,
+          status: "sent"
+        }
+        this.contacts[this.contactClick].messages.push(newMessage);
       }
     }
   });
