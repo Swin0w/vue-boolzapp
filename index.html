@@ -74,11 +74,11 @@
           <img :src="contacts[contactClick].avatar" alt="Nome del contatto">
           <span>{{contacts[contactClick].name}}</span>
         </div>
-        <div id="justChatting">
+        <div id="justChatting" v-if="showConv">
 
         </div>
         <div id="sendMessage">
-          <input type="text" name="" placeholder="Scrivi un messaggio...">
+          <input type="text" name="" placeholder="Scrivi un messaggio..." v-keyOn.enter="addMessage">
           <input type="button" name="" value=">">
         </div>
       </section>

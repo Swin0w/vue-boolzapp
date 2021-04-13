@@ -2,8 +2,10 @@ function init(){
   new Vue({
     el: "#app",
     data: {
+      addMessage: "",
       contactClick: 0,
       showChat: false,
+      showConv: true,
       contacts: [
         {
           name: "Mamma",
@@ -79,6 +81,10 @@ function init(){
         console.log("ciao");
         this.showChat = true;
         this.contactClick = index;
+      },
+      showConv: function(index){
+
+
       }
     }
   });
