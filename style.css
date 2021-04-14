@@ -127,7 +127,7 @@ main {
   vertical-align: middle;
 }
 #sendMessage input[type="button"] {
-  background: linear-gradient(#fff,#26ff00);
+  background-color: #26ff00;
   border: 1px solid #26ff00;
   width: 30px;
   height: 30px;
@@ -139,7 +139,7 @@ main {
 /* MESSAGGIO DESTRA - > status:sent */
 .rightMsg {
   background-color: #26ff00;
-  flex-shrink: 1;
+  width: 20%;
   float: right;
   margin-right: 20px;
   padding: 10px;
@@ -150,6 +150,8 @@ main {
 .leftMsg {
   background-color: #000;
   width: 20%;
+  float: left;
+  margin-left: 20px;
   padding: 10px;
   color: white;
   margin-top: 20px;

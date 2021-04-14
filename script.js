@@ -2,6 +2,7 @@ function init(){
   new Vue({
     el: "#app",
     data: {
+      searchContact: "",
       writeMessage: "",
       contactClick: 0,
       showChat: false,
@@ -68,8 +69,11 @@ function init(){
       ]
     },
     methods: {
-      // search: function() {
+      // search: function(index) {
+      //   console.log("Chi stai cercando?");
+      //   if(this.searchContact == this.contacts[name]) {
       //
+      //   }
       // },
       openChat: function(index) {
         console.log("ciao");

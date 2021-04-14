@@ -45,7 +45,7 @@
         <div class="container">
           <div id="navContacts-header">
             <img src="img/boolzapp.png" alt="">
-            <input type="search" name="" placeholder="Trova il contatto...">
+            <input type="search" name="" placeholder="Cerca il contatto..." v-model="searchContact">
           </div>
         </div>
         <ul>
@@ -75,18 +75,18 @@
           <span>{{contacts[contactClick].name}}</span>
         </div>
         <div id="justChatting">
-          <div id="message"v-for="elem in contacts[contactClick].messages"
-          v-if="contacts.messages == sent" class="rightMsg">
+          <div v-for="elem in contacts[contactClick].messages"
+          v-if="contacts[contactClick].messages.status == sent" class="rightMsg">
             <p>{{elem.text}}</p>
           </div>
-          <div v-else class="leftMsg">
+          <div class="leftMsg" v-else>
             <p>{{elem.text}}</p>
           </div>
         </div>
         <div id="sendMessage">
           <input type="text" name="" placeholder="Scrivi un messaggio..." v-model="writeMessage"
           v-on:keyUp.enter="addMessage">
-          <input type="button" name="" value=">">
+          <input type="button" name="" value=">" @click="addMessage">
         </div>
       </section>
     </main>
