@@ -76,7 +76,7 @@
         </div>
         <div id="justChatting">
           <div v-for="elem in contacts[contactClick].messages"
-          v-if="contacts[contactClick].messages.status == sent" class="rightMsg">
+          v-if="elem.status == 'sent'" class="rightMsg">
             <p>{{elem.text}}</p>
           </div>
           <div class="leftMsg" v-else>
